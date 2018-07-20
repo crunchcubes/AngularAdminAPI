@@ -1,0 +1,5 @@
+﻿exec sp_rename 'Table', 'Task'
+http://localhost:17872/api/task/gettasks
+
+
+http://www.mukeshkumar.net/articles/web-api/dapper-and-repository-pattern-in-web-api
