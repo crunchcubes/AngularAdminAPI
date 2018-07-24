@@ -42,5 +42,12 @@ namespace AngularAdmin.DataAccess.Repositories
 
             return new { tasks = tasksResult };
         }
+
+        public static object AddTask(Task task)
+        {
+            TaskRepository repository = new TaskRepository();
+            repository.db.Task.Add(task);
+            return null;
+        }
     }
 }

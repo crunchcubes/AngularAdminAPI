@@ -93,6 +93,7 @@
     <Compile Include="Repositories\IGenericRepository.cs" />
     <Compile Include="Models\TaskModelResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ProjectRepository.cs" />
     <Compile Include="Repositories\TaskRepository.cs" />
   </ItemGroup>
   <ItemGroup>

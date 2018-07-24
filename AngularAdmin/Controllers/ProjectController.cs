@@ -17,23 +17,13 @@ using Newtonsoft.Json;
 namespace AngularAdmin.Controllers
 {
     [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
-    public class TaskController : ApiController
+    public class ProjectController : ApiController
     {
         //[System.Web.Http.HttpPost]
-        public IHttpActionResult GetTasks()
+        public IHttpActionResult GetProjects()
         {
-            var result = TaskRepository.GetTasksByPageIndexResult(0, 0);
+            var result = ProjectRepository.GetAllProjectResult();
             return Ok(result);
         }
-
-        [HttpPost]
-        public IHttpActionResult AddTask(JObject json)
-        {
-            var result = TaskRepository.AddTask(new Task());
-
-            string test = json.ToString();
-            return Ok(test);
-        }
-
     }
 }
